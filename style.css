@@ -1,95 +1,77 @@
-h1{
-font-family: 'Montserrat', sans-serif;
-font-size: 50px;
-color: white;
-margin: 0;
-padding: 0;
-text-align: center;
-}
-h2{
-font-family: 'Montserrat', sans-serif;
-font-size: 42px;
-color: black;
-margin: 0;
-padding: 0;
-text-align: center;
-}
-h3{
-font-family: 'Montserrat', sans-serif;
-font-size: 24px;
-color: black;
-margin: 0;
-padding: 0;
-text-align: center;
-}
-h4{
-font-family: 'Montserrat', sans-serif;
-font-size: 18px;
-color: black;
-margin: 0;
-padding: 0;
-text-align: left;
-}
-h5{
-font-family: 'Montserrat', sans-serif;
-font-size: 18px;
-color: white;
-margin: 0;
-padding: 0;
-text-align: left;
-}
-a {
-font-family: "Slabo 27px", serif;
-font-weight: 400;
-font-style: normal;
-font-size: 18px;
-color: #ACEAEF;
-margin: 0;
-padding: 0;
-text-align: left;
+/* ===========================
+  TYPOGRAPHY & BASE STYLES
+  =========================== */
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-p{
-font-family: "Slabo 27px", serif;
-font-weight: 400;
-font-style: normal;
-font-size: 18px;
-color: #ACEAEF;
-margin: 0;
-padding: 0;
-text-align: center;
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-.header { 
-background-color: #7343a7;
-grid-area: header;
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-.menu { 
-background-color: #ACEAEF;
-grid-area: menu; 
-display: flex;
-flex-direction: column;
-min-width:300px;
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
-.item1 { 
-background-color: #fcd3de;
-grid-area: main;
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
-.item2{ 
-background-color: #fcd3de;
-grid-area: main2;
+
+a {
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #ACEAEF;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
-.item3 { 
-background-color: #fcd3de;
-grid-area: right1;
+
+p {
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #ACEAEF;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-.item4 { 
-background-color: #fcd3de;
-grid-area: right2;
-}
-.footer { 
-background-color: #7343a7;
-grid-area: footer;
-}
+
+/* ===========================
+  LAYOUT & BODY
+  =========================== */
 
 body {
   margin: 0;
@@ -105,78 +87,113 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+/* ===========================
+  HEADER & FOOTER
+  =========================== */
+
 header {
-text-align: center;
-padding: 50px 20px;
+  text-align: center;
+  padding: 50px 20px;
 }
 
 header h1 {
-font-size: 48px;
-margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 header p {
-font-size: 20px;
-color: #ACEAEF;;
+  font-size: 20px;
+  color: #ACEAEF;
 }
 
 .footer-space {
   height: 150px;
 }
 
-/* ---- Grid ---- */
+/* ===========================
+  GRID LAYOUT & COMPONENTS
+  =========================== */
+
 .grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-padding: 0px;
-max-width: 1200px;
-margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+.header { 
+  background-color: #7343a7;
+  grid-area: header;
+}
+
+.menu { 
+  background-color: #ACEAEF;
+  grid-area: menu; 
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.item1 { 
+  background-color: #fcd3de;
+  grid-area: main;
+}
+
+.item2 { 
+  background-color: #fcd3de;
+  grid-area: main2;
+}
+
+.item3 { 
+  background-color: #fcd3de;
+  grid-area: right1;
+}
+
+.item4 { 
+  background-color: #fcd3de;
+  grid-area: right2;
+}
+
+.footer { 
+  background-color: #7343a7;
+  grid-area: footer;
+}
+
+/* ===========================
+  PROJECT CARDS
+  =========================== */
+
 .project {
-background-color: #fff;
-border-radius: 12px;
-overflow: hidden;
-box-shadow: 0 3px 12px rgba(0,0,0,0.1);
-transition: transform 0.2s ease, box-shadow 0.2s ease;
-cursor: pointer;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 .project:hover {
-transform: translateY(-6px);
-box-shadow: 0 12px 22px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.15);
 }
 
 .project img {
-width: 100%;
-height: 220px;
-object-fit: cover;
-display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
 }
 
 .project h3 {
-margin: 15px;
-font-size: 20px;
+  margin: 15px;
+  font-size: 20px;
 }
 
-
-/* ---- Responsive ---- */
-@media (max-width: 900px) {
-.grid {
-grid-template-columns: repeat(2, 1fr);
-}
-}
-
-@media (max-width: 600px) {
-.grid {
-grid-template-columns: 1fr;
-}
-}
-
-/* ---------------------------
-   PROJECT PAGE STYLES
---------------------------- */
+/* ===========================
+  PROJECT PAGE STYLES
+  =========================== */
 
 .project-page {
   background-color: #f7f7f7;
@@ -198,7 +215,7 @@ grid-template-columns: 1fr;
 .project-page header p {
   font-family: "Slabo 27px", serif;
   font-size: 20px;
-  color:#ACEAEF;
+  color: #ACEAEF;
 }
 
 .project-page .content-wrapper {
@@ -259,12 +276,28 @@ grid-template-columns: 1fr;
   text-decoration: underline;
 }
 
-@media (max-width: 700px) {
-  .project-page .image-grid {
-    grid-template-columns: 1fr;
+.project-page .footer-space {
+  height: 100px;
+}
+
+/* ===========================
+  RESPONSIVE DESIGN
+  =========================== */
+
+@media (max-width: 900px) {
+  .grid {
+   grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.project-page .footer-space {
-  height: 100px;
+@media (max-width: 700px) {
+  .project-page .image-grid {
+   grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+   grid-template-columns: 1fr;
+  }
 }
